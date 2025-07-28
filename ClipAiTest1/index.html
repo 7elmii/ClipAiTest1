@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube AI Clipper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clipper-container">
+        <div class="header">
+            <h1>AI Video Clipper</h1>
+            <p>Paste a YouTube link to automatically clip the most interesting moment.</p>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="youtube-url" placeholder="e.g., https://www.youtube.com/watch?v=...">
+            <button id="clip-button">Generate</button>
+        </div>
+
+        <div class="status-area">
+            <div id="loader" style="display: none;">
+                <div class="spinner"></div>
+                <span id="status-text">Processing...</span>
+            </div>
+        </div>
+
+        <div id="result-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
